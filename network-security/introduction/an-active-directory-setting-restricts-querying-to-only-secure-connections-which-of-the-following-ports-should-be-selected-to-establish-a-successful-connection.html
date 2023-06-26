@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>An active directory setting restricts querying to only secure connections. Which of the following ports should be selected to establish a successful connection?
 </title>
-<meta name="description" content="For LDAPs (LDAP SSL), TCP 636 is used for Directory, Replication, User and Computer Authentication, Group Policy, Trusts.Port 389 has historically been used for unencrypted connections into an LDAP server. Port 636 is used for legacy SSL connections. Port 389 is used for TLS connections; TLS establishes a non encrypted connection on port 389 that it upgrades to an encrypted TLS connection as the initial connection proceeds.3268 is GC plain text. 3269 is GC over SSL which is encrypted by default. 389 is AD plain text. 636 is AD over SSL which is encrypted by default.Port 636 is the default signing port, and 3269 is called the Global Catalog Port. Here is why you should only use port 3269 (if possible) when updating your LDAP Bind for LDAPS. The default port (636) is used for searching the local domain controller, and it can search and return all attributes for the requested item. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="An active directory setting restricts querying to only secure connections. Which of the following ports should be selected to establish a successful connection?">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Single-thread TCP sockets are used for
 </title>
-<meta name="description" content="Yes-you need one socket for each connection. A socket is a client IP address + client port + server IP address + server port combination. If a client is talking to multiple servers, it is using multiple ports on the client machine. Each time you connect() a socket, you are allocating a new port.If there was only a single socket present to handle everything, closing down just one context or the other would be impossible; your only option would be close() the single socket and with it lose all of the state, even the parts you actually wanted to keep. That would be awkward at best.Irrespective of stateful or stateless protocols, two clients can connect to the same server port because for each client we can assign a different socket (as the client IP will definitely differ). The same client can also have two sockets connecting to the same server port-since such sockets differ by SRC-PORT . ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="Single-thread TCP sockets are used for">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

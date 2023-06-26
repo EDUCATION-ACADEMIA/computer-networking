@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LDAP is on port
 </title>
-<meta name="description" content="LDAP TCP and UDP port 389 is used for Directory, Replication, User and Computer Authentication, Group Policy, Trusts. As you mentioned, we could not block port 389 on AD. For LDAPs (LDAP SSL), TCP 636 is used for Directory, Replication, User and Computer Authentication, Group Policy, Trusts.Port 389 has historically been used for unencrypted connections into an LDAP server. Port 636 is used for legacy SSL connections. Port 389 is used for TLS connections; TLS establishes a non encrypted connection on port 389 that it upgrades to an encrypted TLS connection as the initial connection proceeds.The standard port for LDAP communication is 389, although other ports can be used.To change the Remote-LDAP config from standard LDAP (Port 389) to LDAPS (Port 636): 1) Set the SSL parameter to Enabled. The Port value will change from 389 to 636. This will also expose several additional SSL related configuration options.Select Start > Run, type ldp.exe, and then select OK. Select Connection > Connect. In Server and in Port, type the server name and the non-SSL/TLS port of your directory server, and then select OK. For an Active Directory Domain Controller, the applicable port is 389. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="LDAP is on port">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

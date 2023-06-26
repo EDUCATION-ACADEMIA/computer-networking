@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What technique can be used for mitigating VLAN attacks? (CHOOSE 3)
 </title>
-<meta name="description" content="Explanation: Mitigating a VLAN attack can be done by disabling Dynamic Trunking Protocol (DTP), manually setting ports to trunking mode, and by setting the native VLAN of trunk links to VLANs not in use.Explanation: Mitigating a VLAN hopping attack can be done by disabling Dynamic Trunking Protocol (DTP) and by setting the native VLAN of trunk links to a VLAN not in use.Good security hygiene helps reduce the risk of VLAN hopping. For example, unused interfaces should be closed and placed in a parking lot VLAN. Using VLANs on trunk ports should be avoided unless they are necessary. Additionally, access ports should be configured manually with the switchport mode access.Simply do not put any hosts on VLAN 1 (The default VLAN). i.e., assign an access VLAN other than VLAN 1 to every access port Switch (config-if)# switchport access vlan 2. Change the native VLAN on all trunk ports to an unused VLAN ID. Explicit tagging of the native VLAN on all trunk ports. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="What technique can be used for mitigating VLAN attacks? (CHOOSE 3)">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

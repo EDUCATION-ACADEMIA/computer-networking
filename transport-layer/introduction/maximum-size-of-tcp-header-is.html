@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maximum size of TCP header is
 </title>
-<meta name="description" content="The size of Options field can go up to 40 bytes. So, maximum length of TCP header = 20 bytes + 40 bytes = 60 bytes.Thus, a TCP header can be no larger than 60 bytes (15 × 32 bits = 480 bits = 60 bytes). Note that TCP does not define total length like UDP does, but rather only defines header length, like IP.The minimum size header is 5 words and the maximum is 15 words thus giving the minimum size of 20 bytes and maximum of 60 bytes, allowing for up to 40 bytes of options in the header. This field gets its name from the fact that it is also the offset from the start of the TCP segment to the actual data.The IHL field can hold values from 0 (Binary 0000) to 15 (Binary 1111). So the longest Internet Header (IP header) size can be 15*32 Bits = 480 Bits = 60 Bytes. This is why the header has a maximum size of 60 Bytes. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="Maximum size of TCP header is">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

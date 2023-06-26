@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>In TCP numbering always start with
 </title>
-<meta name="description" content="All bytes in a TCP connection are numbered, beginning at a randomly chosen initial sequence number (ISN). The SYN packets consume one sequence number, so actual data will begin at ISN+1. The sequence number is the byte number of the first byte of data in the TCP packet sent (also called a TCP segment).The Initial Sequence Number (ISN) used in TCP/IP sessions should be as random as possible in order to prevent attacks such as IP address spoofing and session hijacking.When a host initiates a TCP session, its initial sequence number is effectively random; it may be any value between 0 and 4, 294, 967, 295, inclusive. However, protocol analyzers like Wireshark will typically display relative sequence and acknowledgement numbers in place of the actual values.In TCP, one purpose of 3-way-handshake is to exchange initial sequence number for both sides. So why not use 0 instead, and the exchange is not necessary. That is to say, sequence numbers can be determined without the 3-way-handshake. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="In TCP numbering always start with">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

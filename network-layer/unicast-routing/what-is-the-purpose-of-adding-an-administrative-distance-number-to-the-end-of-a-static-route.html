@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What is the purpose of adding an administrative distance number to the end of a static route?
 </title>
-<meta name="description" content="The administrative distance of a static route can be increased to make the route less desirable than that of another static route or a route learned through a dynamic routing protocol. In this way, the static route floats and is not used when the route with the better administrative distance is active.A floating static route can be used to provide a backup route to multiple interfaces or networks on a router. It is also encapsulation independent, meaning it can be used to forward packets out any interface, regardless of encapsulation type.Static routes have a very low administrative distance of 1, this means that your router will prefer a static route over any routes that were learned through a dynamic routing protocol.Since the Administrative Distance (AD) of a static route in Cisco is set to 1 as it is the most trustful connection after a directly connected route that has an administrative distance of 0, we need to set it manually to a higher value so as the better route based on other factors are preferred. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="What is the purpose of adding an administrative distance number to the end of a static route?">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What port does DNS use for connection attempts?
 </title>
-<meta name="description" content="The answer is DNS is mostly UDP Port 53, but as time progresses, DNS will rely on TCP Port 53 more heavily.The DNS uses TCP Port 53 for zone transfers, for maintaining coherence between the DNS database and the server. The UDP protocol is used when a client sends a query to the DNS server. The TCP protocol should not be used for queries as it gives a lot of information, which is useful to attackers.A DNS client uses a random port above 1023 for both UDP and TCP. You can thus differentiate between the following: A client-to-server query-source port is above 1023, destination port is 53. A server-to-client response-source port is 53, destination port is above 1023. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="What port does DNS use for connection attempts?">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

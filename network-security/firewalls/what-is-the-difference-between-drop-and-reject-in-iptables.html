@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What is the difference between DROP and REJECT in IPtables?
 </title>
-<meta name="description" content="The REJECT rule immediately rejected the ICMP echo requests with a Destination Port Unreachable error. On the other hand, for DROP, the ICMP echo request timed out after a while. While using TCP, we got an immediate Connection refused error in the case of REJECT.Difference between DROP and REJECT Actually, when we use the DROP command, it will not forward the packet or answer it. But, simply drops the packet silently. And, no indication is sent to the client or server. But, the REJECT command sends an error message back to the source indicating a connection failure.REJECT-you disable all incoming packets except those that you have allowed in specific rules and the source machine is informed about the rejection. DROP-you disable all incoming packets except those that you have allowed in specific rules and no information sent to the source machine.The difference is that the REJECT target sends a reject response to the source, while the DROP target sends nothing. This can be useful e.g. for the ident service. If you use REJECT then the clients doesnt need to wait for timeout.With REJECT, you do your scan and categorise the results into connection established and connection rejected. With DROP, you categorise the results into connection established and connection timed out. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="What is the difference between DROP and REJECT in IPtables?">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

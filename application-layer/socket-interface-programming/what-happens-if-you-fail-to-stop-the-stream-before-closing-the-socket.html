@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What happens if you fail to stop the stream before closing the socket?
 </title>
-<meta name="description" content="Big difference between shutdown and close on a socket is the behavior when the socket is shared by other processes. A shutdown() affects all copies of the socket while close() affects only the file descriptor in one process.If socket refers to an open TCP connection, the connection is closed. If a stream socket is closed when there is input data queued, the TCP connection is reset rather than being cleanly closed. The descriptor of the socket to be closed. Note: All sockets should be closed before the end of your process.Shutdown (in your case) indicates to the other end of the connection there is no further intention to read from or write to the socket. Then close frees up any memory associated with the socket. Omitting shutdown may cause the socket to linger in the OSs stack until the connection has been closed gracefully. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="What happens if you fail to stop the stream before closing the socket?">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

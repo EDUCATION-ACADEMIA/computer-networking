@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What value does an IPv6 link-local address begin with?
 </title>
-<meta name="description" content="An IPv6 link-local address consists of the link-local prefix FE80::/10 (the 10 most significant bits are 1111111010) and an interface ID in the IEEE EUI-64 format (an EUI-64 interface ID can be created from an extended EUI-48 bit MAC address).the FE80::/10 are the link local addresses. It is correct that you dont see them in the routing table: as explained in a previous thread actually it is a single IPv6 /64 subnet using eui-64 format what you get.link local – these addresses are used for sending packets over the local subnet. Routers do not forward packets with this addresses to other subnets. IPv6 requires a link-local address to be assigned to every network interface on which the IPv6 protocol is enabled. These addresses have a prefix of FE80::/10.Typically, link-local IPv6 addresses have FE80 as the hexadecimal representation of the first 10 bits of the 128-bit IPv6 address, then the least-significant 64-bits of the address are the Interface Identifier (IID). ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="What value does an IPv6 link-local address begin with?">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>When will it be appropriate to use UDP instead of TCP?
 </title>
-<meta name="description" content="If your streaming content is recorded and made available to the viewers later, such as in the form of VOD, then TCP works well. On the other hand, UDP is typically used for live streaming and multicast video conferencing. Such applications normally require their own protocol (commonly RTP/RTCP over UDP) on top of UDP.UDP is faster and more efficient than TCP It allows data transmission to begin faster without delays or extended latency time. There is also no need to put the packets in sequence or send and receive acknowledgments, saving time. In addition to latency, UDP is also more efficient in terms of bandwidth.Typically, applications that transfer data files will use TCP since the protocols latency and performance issues are not that critical. UDP benefits applications that need to receive data quickly even if accuracy suffers. This is why real-time applications like audio and video streaming will often use UDP.TCP uses packet retransmissions to recover from packet losses and packet re-ordering. It‟s argues that retransmissions can introduce unacceptable end-to-end latency. In multimedia streaming, unlike in other cases, this is not appropriate given the real-time nature of the content. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="When will it be appropriate to use UDP instead of TCP?">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

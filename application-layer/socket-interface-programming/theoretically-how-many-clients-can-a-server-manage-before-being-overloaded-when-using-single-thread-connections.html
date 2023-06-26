@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Theoretically, how many clients can a server manage before being overloaded when using single-thread connections?
 </title>
-<meta name="description" content="A single listening port can accept more than one connection simultaneously. There is a 64K limit that is often cited, but that is per client per server port, and needs clarifying.Hi, By default, SQL Server allows a maximum of 32767 concurrent connections which is the maximum number of users that can simultaneously log in to the SQL server instance.Then theoretical limit a server can support on a single port is 248 which is about 1 quadrillion because: The server distinguishes the connections from clients source IPs and the source ports. [number of source IP addresses]x[num of source ports] 32 bits for the address and 16 bits for the port. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="Theoretically, how many clients can a server manage before being overloaded when using single-thread connections?">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">
